@@ -298,9 +298,63 @@ function showSidebar(){
   sidebar.style.display = 'flex'
 
 }
-function hideSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
-
+function hideSidebar(event){
+  const sidebar = document.querySelector('.sidebar');
+  
+  // Check if the link is an internal link
+  if (event.target.closest('a').getAttribute('href').startsWith('#')) {
+    // Allow the default action for internal links but hide the sidebar after a short delay
+    setTimeout(() => {
+      sidebar.style.display = 'none';
+    }, 300); // Adjust delay as needed
+  } else {
+    // Prevent the default action for external links
+    event.preventDefault();
+    sidebar.style.display = 'none';
+  }
 }
 
+
+
+
+
+
+paceOptions ={
+  ajax: true,
+  document:true
+}
+Pace.on('done', () => {
+  gsap.timeline()
+  .add('p')
+  .to('.pace', {
+    transform: 'scale(10,1)',
+    duration:4,
+  },"+=.2")
+  .to('.pace',{
+    duration:0.5,
+    height:"100%",
+  },"-=2.5")
+  .to('.loading_text',{
+    delay:1.2,
+    duration:2,
+    opacity:0,
+    yPercent:-400,
+    ease:'BezierEasing(0.19,1,0.22,1)'
+  },'p')
+  .to('.pace',{
+    duration:1,
+    opacity:0,
+    ease:'BezierEasing(0.19,1,0.22,1)'
+  },"-=1.9")
+  .to('.mega-cont',{
+    delay:.1,
+    duration:1,
+    opacity:1,
+    ease:Expo.easeInOut
+  },"-=2.2")
+  .to('.pre_loading' ,{
+    duration:1,
+    opacity:0,
+    ease
+  })
+})
