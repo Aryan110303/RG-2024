@@ -11,310 +11,319 @@
   <link href="./dist/output.css" rel="stylesheet">
 </head>
 <body>
-  <div class="progress-wrap">
-		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-		</svg>
-	</div>
-  <div class="navbar w-full fixed top-0 left-0 lg:right-0 xl:right-0 lg:w-full xl:w-full z-50 transition-all">
-    <ul class="sidebar mt-14">
-      <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-      <li><a href="#" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Home</a></li>
-      <li><a href="#about" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">About</a></li>
-      <li><a href="#work" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Work</a></li>
-    </ul>
-    <div class="flex items-center px-5 lg:px-7.5 xl:px-10 py-2">
-      <a class="w-[19rem] xl:mr-8 flex" href="#hero">
-        <img src="./assets/RGLogo.png" width="110" height="80" alt="pic">
-      </a>
-
-      <nav class="hidden lg:flex top-[5rem] left-0 right-0 bottom-0 bg-gray-800 lg:static lg:mx-auto lg:bg-transparent">
-        <div class="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
-          <!-- Example navigation items, replace with your actual navigation -->
-          <a href="#" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Home</a>
-          <a href="#about" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">About</a>
-          <a href="#work" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Work</a>
-        </div>
-      </nav>
-
-      <button class="hidden lg:flex bg-black hover:bg-gray-600 text-white font-mono uppercase text-xs font-semibold transition-colors hover:hover:text-color-1 px-4 py-2 ml-auto">Contact Me</button>
-      <button class="ml-auto lg:hidden px-3" onclick=showSidebar()>
-        <!-- SVG or Icon for menu -->
-        <svg class="fill-current text-white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
-          <path d="M0 0h24v24H0V0z" fill="none"/>
-          <path d="M4 6h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"/>
-        </svg>
-      </button>
+  <div class="pre_loading">
+    <div class="loading_text">
+      Loading
     </div>
-  </div>
+   </div>
+   <div class="mega-cont p-0 m-0">
 
-  <div class='hero relative w-full pt-32 lg:pt-28 left-0 right-0 '>
-    <div class='lg:flex xl:flex lg:px-16 xl:px-16 xl:py-10 xl:justify-around'>
-        <div class='text-center py-12 lg:py-0 xl:py-0 lg:text-left xl:text-left lg:flex xl:flex lg:items-center lg:justify-center xl:items-center xl:justify-center '>
-            <div class='w-full'>
-                <div class='side-main'>
-                    <div class='name lg:py-8'>
-                        <h5 class='text-xl xl:text-xl text-white uppercase font-mono font-semibold' data-js="reveal">Hello! I'm</h5>
-                        <h1 class='lg:text-7xl xl:text-8xl text-white text-4xl uppercase font-code font-semibold' data-js="reveal"><strong class='text-color-1'>Rahul</strong> Gaur</h1>
-                    </div>
-                    <div class='txt lg:py-1 text-white'>
-                      <span id="typewriter-text" class="text-white dark:text-white text-xl lg:text-2xl xl:text-2xl font-code"></span>
-                      <span class="cursor"></span>
-                    </div>
-                    <div id="dock" class="flex mt-15 justify-center lg:justify-start xl:justify-start">
-                      <ul class="flex">
-                        <li>
-                          <a class="facebook" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="twitter" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="instagram" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-instagram" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a class="google" href="#">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                          </a>
-                        </li>
-                      </ul>
-                  </div>
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="rahulpic text-center ml-8 relative lg:ml-72 xl:ml-72 mt-20 flex w-80 lg:w-112 xl:w-112 aspect-square border border-gray-600 rounded-full">
-            <div class="flex w-80 aspect-square m-auto border border-gray-600 rounded-full">
-                <div class="w-112 aspect-square p-1 bg-conic-gradient rounded-full">
-                    <div class="flex items-center justify-center w-full h-full rounded-full bg-black">
-                        <img class='rounded-full' src="./assets/Rgpic.png" alt="rg" style="width: 70%; height: 100%;">
-                    </div>
-                </div>
-            </div>
-        </div>
+     <div class="progress-wrap">
+       <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+         <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+       </svg>
+     </div>
+     <div class="navbar w-full fixed top-0 left-0 lg:right-0 xl:right-0 lg:w-full xl:w-full z-50 transition-all">
+       <ul class="sidebar mt-14">
+         <li onclick=hideSidebar(event)><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+         <li><a href="#" onclick=hideSidebar(event) class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Home</a></li>
+         <li><a href="#about" onclick=hideSidebar(event) class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">About</a></li>
+         <li><a href="#work" onclick=hideSidebar(event) class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Work</a></li>
+       </ul>
+       <div class="flex items-center px-5 lg:px-7.5 xl:px-10 py-2">
+         <a class="w-[19rem] xl:mr-8 flex" href="#hero">
+           <img src="./assets/RGLogo.png" width="110" height="80" alt="pic">
+         </a>
+   
+         <nav class="hidden lg:flex top-[5rem] left-0 right-0 bottom-0 bg-gray-800 lg:static lg:mx-auto lg:bg-transparent">
+           <div class="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+             <!-- Example navigation items, replace with your actual navigation -->
+             <a href="#" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Home</a>
+             <a href="#about" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">About</a>
+             <a href="#work" class="block relative font-mono text-2xl uppercase text-white transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:text-sm lg:font-semibold lg:leading-5 lg:hover:text-color-1 xl:px-12">Work</a>
+           </div>
+         </nav>
+   
+         <button class="hidden lg:flex bg-black hover:bg-gray-600 text-white font-mono uppercase text-xs font-semibold transition-colors hover:hover:text-color-1 px-4 py-2 ml-auto">Contact Me</button>
+         <button class="ml-auto lg:hidden px-3" onclick=showSidebar()>
+           <!-- SVG or Icon for menu -->
+           <svg class="fill-current text-white" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+             <path d="M0 0h24v24H0V0z" fill="none"/>
+             <path d="M4 6h16v2H4zm0 6h16v2H4zm0 6h16v2H4z"/>
+           </svg>
+         </button>
+       </div>
+     </div>
+   
+     <div class='hero relative w-full pt-32 lg:pt-28 left-0 right-0 '>
+       <div class='lg:flex xl:flex lg:px-16 xl:px-16 xl:py-10 xl:justify-around'>
+           <div class='text-center py-12 lg:py-0 xl:py-0 lg:text-left xl:text-left lg:flex xl:flex lg:items-center lg:justify-center xl:items-center xl:justify-center '>
+               <div class='w-full'>
+                   <div class='side-main'>
+                       <div class='name lg:py-8'>
+                           <h5 class='text-xl xl:text-xl text-white uppercase font-mono font-semibold' data-js="reveal">Hello! I'm</h5>
+                           <h1 class='lg:text-7xl xl:text-8xl text-white text-4xl uppercase font-code font-semibold' data-js="reveal"><strong class='text-color-1'>Rahul</strong> Gaur</h1>
+                       </div>
+                       <div class='txt lg:py-1 text-white'>
+                         <span id="typewriter-text" class="text-white dark:text-white text-xl lg:text-2xl xl:text-2xl font-code"></span>
+                         <span class="cursor"></span>
+                       </div>
+                       <div id="dock" class="flex mt-15 justify-center lg:justify-start xl:justify-start">
+                         <ul class="flex">
+                           <li>
+                             <a class="facebook" href="#">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <i class="fa fa-facebook" aria-hidden="true"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a class="twitter" href="#">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <i class="fa fa-twitter" aria-hidden="true"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a class="instagram" href="#">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <i class="fa fa-instagram" aria-hidden="true"></i>
+                             </a>
+                           </li>
+                           <li>
+                             <a class="google" href="#">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                               <i class="fa fa-linkedin" aria-hidden="true"></i>
+                             </a>
+                           </li>
+                         </ul>
+                     </div>
+                       
+                   </div>
+               </div>
+           </div>
+   
+           <div class="rahulpic text-center ml-12 relative lg:ml-72 xl:ml-72 mt-20 flex w-80 lg:w-112 xl:w-112 aspect-square border border-gray-600 rounded-full">
+               <div class="flex w-80 aspect-square m-auto border border-gray-600 rounded-full">
+                   <div class="w-112 aspect-square p-1 bg-conic-gradient rounded-full">
+                       <div class="flex items-center justify-center w-full h-full rounded-full bg-black">
+                           <img class='rounded-full' src="./assets/Rgpic.png" alt="rg" style="width: 70%; height: 100%;">
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   
+   
+   
+   <div class="container mt-36 lg:mt-24 xl:mt-28 font-mono" id="about" data-aos="fade-up" data-aos-duration="2000">
+     <div class="flex w-full items-center justify-center">
+       <span class=" uppercase text-4xl" id="about-txt"><strong class="text-color-1">About </strong> Me!</span>
+     </div>
+     <div class="flex text-xl lg:text-2xl xl:text-2xl items-center justify-center py-12 leading-9 text-center lg:px-4 xl:px-4">
+       <span>
+           CAPM certified project manager with 3+ years of experience owning all stages of the lifecycle to deliver projects that exceed 
+           expectations on time and on budget, driving strategic initiatives in BFSI. Proven expertise in Project Management, Business Analysis, 
+           Risk Management, and Cybersecurity. Skilled in leading cross-functional teams and delivering complex projects successfully.
+       </span>
+     </div>
+     <div class="exp lg:flex lg:items-center lg:justify-center xl:flex xl:items-center xl:justify-center w-full gap-28">
+       <div class="flex items-center justify-center">
+           <span class="text-6xl px-2 text-color-1" words-slide-up="" text-split="" >3+</span>
+           <span class="text-sm opacity-60" words-slide-up="" text-split="" >Years of <br/>Experience</span>
+       </div>
+       <div class="flex items-center justify-center py-6">
+           <span class="text-6xl px-2 text-color-1" words-slide-up="" text-split="" >120+</span>
+           <span class="text-sm opacity-60" words-slide-up="" text-split="" >Clients <br/>Handled</span>
+       </div>
+     </div>
+   </div>
+   
+   
+   <div class=" mt-10 lg:mt-28 xl:mt-36 font-mono">
+     <div class="flex w-full items-center justify-center">
+       <span class="uppercase text-4xl" id="about-txt" words-slide-up="" text-split="">Certifications</span>
+     </div>
+     <div class="certificate flex" data-aos="fade-up" data-aos-duration="3500">
+       <div class="certificate-slide flex">
+         <img src="./assets/BCMS.png" alt="">
+         <img src="./assets/CC.png" alt="">
+         <img src="./assets/CSM.png" alt="">
+         <img src="./assets/CSPO.png" alt="">
+         <img src="./assets/GreenBelt.png" alt="">
+         <img src="./assets/ISMS.png" alt="">
+         <img src="./assets/PIMS.png" alt="">
+         <img src="./assets/PMI.png" alt="">
+         <img src="./assets/BCMS.png" alt="">
+         <img src="./assets/CC.png" alt="">
+         <img src="./assets/CSM.png" alt="">
+         <img src="./assets/CSPO.png" alt="">
+         <img src="./assets/GreenBelt.png" alt="">
+         <img src="./assets/ISMS.png" alt="">
+         <img src="./assets/PIMS.png" alt="">
+         <img src="./assets/PMI.png" alt="">
+   
+       </div>
+   
+     </div>
+   </div>
+   
+   
+   <div class="w-full px-10 py-14">
+     <div class="w-full mx-auto my-auto max-w-[80rem]">
+       <div class="w-full text-center max-w-[40rem] mx-auto">
+         <div class="light text-center">
+           <img class="home-growth_image" src="https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth.jpg" alt="" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(0px); opacity: 1;" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 1080px) 92vw, 994px" data-w-id="69fbb613-3b03-9241-9327-2ed90252863b" loading="lazy" srcset="https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth-p-500.jpg 500w, https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth-p-800.jpg 800w, https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth.jpg 994w">
+         </div>
+         <div class="font-code mb-4">
+           <h1 words-slide-up="" text-split="" class="uppercase text-4xl">Maximizing <strong class="text-color-1">Efficiency</strong><br>Through Work</h1>
+         </div>
+         <div class="font-code mb-4" style="opacity: 0.7;" data-aos="fade-up" data-aos-duration="3000">
+           <p>I have a proven track record of developing effective risk management strategies for clients in the financial services sector.</p>
+         </div>
+         <p class="font-code opacity-70" data-aos="fade-up" data-aos-duration="3000">I excel at collaborating with cross-functional teams to deliver high-quality projects.<br>My Expertise Include:</p>
+       </div>
+       <div class="expert" data-aos="fade-up" data-aos-duration="3000">
+         <div>
+           <div class="number text-color-1">
+             01
+           </div>
+           <div class="heading font-mono">
+             IT risk Assessments
+           </div>
+           <div class="in-text py-2 font-mono">
+             <p>I specialize in IT risk assessments, empowering businesses to proactively identify vulnerabilities and threats within their technology infrastructure.</p>
+           </div>
+           <div class="flex">
+             <img src="./assets/arrow-sub-down-right-svgrepo-com.svg" alt="" class="w-12 h-12">
+             <div class="text-color-1 text-xl lg:text-1xl xl:text-1xl">72% of businesses reduce cybersecurity incidents through comprehensive IT risk assessments.</div>
+           </div>
+         </div>
+         <div>
+           <div class="number text-color-1">
+             02
+           </div>
+           <div class="heading font-mono">
+             Internal Control Testing
+           </div>
+           <div class="in-text py-2 font-mono">
+             <p>I specialize in Internal Control Testing, a critical process that ensures the business's operational integrity and compliance with applicable laws.</p>
+           </div>
+           <div class="flex">
+             <img src="./assets/arrow-sub-down-right-svgrepo-com.svg" alt="" class="w-12 h-12">
+             <div class="text-color-1 text-xl lg:text-1xl xl:text-1xl">65% of businesses enhance financial accuracy and prevent fraud with thorough internal control testing.</div>
+           </div>
+         </div>
+         <div>
+           <div class="number text-color-1">
+             03
+           </div>
+           <div class="heading font-mono">
+             Regulatory Compliance
+           </div>
+           <div class="in-text py-2 font-mono">
+             <p>I specialize in Regulatory Compliance, ensuring that the business adheres to all relevant laws, regulations, and guidelines specific to the industry.</p>
+           </div>
+           <div class="flex">
+             <img src="./assets/arrow-sub-down-right-svgrepo-com.svg" alt="" class="w-12 h-12">
+             <div class="text-color-1 text-xl lg:text-1xl xl:text-1xl">88% of businesses see improved operational efficiency with stringent regulatory compliance.</div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   
+   <!-- projects section start -->
+    <div class="my-20 lg:my-28 xl:my-32" id="work">
+     <h1 class="uppercase text-3xl lg:text-8xl xl:text-8xl w-full text-center font-code" words-slide-up="" text-split="" >Proj<strong class="uppercase text-color-1">ects</strong></h1>
     </div>
+   
+     <div class="containers" data-aos="fade-up">
+         <ul id="cards">
+             <li class="card" id="card1">
+                 <div class="card-body">
+                     <h2>Card 1</h2>
+                 </div>
+             </li>
+             <li class="card" id="card2">
+                 <div class="card-body">
+                     <h2>Card 2</h2>
+                 </div>
+             </li>
+             <li class="card" id="card3">
+                 <div class="card-body">
+                     <h2>Card 3</h2>
+                 </div>
+             </li>
+             <li class="card" id="card4">
+                 <div class="card-body">
+                     <h2>Card 4</h2>
+                 </div>
+             </li>
+         </ul>
+     </div>
+   
+   
+   <!-- photography -->
+   
+   
+   <footer class='relative w-full bottom-0 left-0 right-0 mt-[7rem] mb-[1rem] lg:mt-[11rem] xl:mt-[11rem] lg:mb-[2rem] xl:mb-[2rem]'>
+     <div class='w-full px-15'>
+         <div class='top-0 px-[2rem] text-center ml-auto mr-auto max-w-[42rem]'>
+             <h5 class='text-3xl lg:text-4xl xl:text-4xl uppercase font-code font-bold'>Have a <strong class='text-color-1'>chat</strong> with me!</h5>
+             
+         </div>
+         <div class='lg:flex xl:flex lg:items-center lg:justify-between xl:items-center xl:justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4 lg:py-9'>
+             <a class="w-[19rem] xl:mr-8 hidden lg:flex xl:flex">
+                 <img src="./assets/RGLogo.png" width="50px" height="50px">
+                 <h1 class="font-code font-bold tracking-widest my-6">Rahul Gaur<span class="hidden lg:inline md:inline sm:inline"></span></h1>
+             </a>
+             <div class="py-8 lg:py-0 xl:py-0">
+                 <a href="">
+                     <i class='fa fa-download'></i>
+                     <span class='font-code transition-colors hover:text-color-1 px-2'>Take a look at my CV</span>
+                 </a>
+             </div>
+             
+             <div>
+             <span class='uppercase font-code'>Get in Touch:</span>
+             <a class="w-[19rem] xl:mr-8 flex" target='blank' href="maito:rahulgaur.iitr@gmail.com">
+                 <span class='text-center font-code transition-colors hover:text-color-1'>rahulgaur.iitr@gmail.com</span>
+             </a>
+             </div>
+         </div>
+         <div class='flex py-[3rem] items-center justify-between border-t-n-1 border-t-[0.1rem]'>
+             <p class='text-[1rem] px-8 lg:px-5 '>© Copyright 2024, All Rights Reserved</p>
+             <ul class='flex flex-col lg:flex-row xl:flex-row justify-end gap-[1rem] px-10 lg:px-9 '>
+                 <li>
+                     <a href="#" class='text-[1rem] transition-colors hover:text-color-1'>Privacy Policy</a>
+                 </li>
+                 <li>
+                     <a href="#" class='text-[1rem] transition-colors hover:text-color-1'>Terms & Conditions</a>
+                 </li>
+             </ul>
+         </div>
+     </div>
+   </footer>
 </div>
 
 
 
 
-<div class="container mt-36 lg:mt-24 xl:mt-28 font-mono" id="about" data-aos="fade-up" data-aos-duration="2000">
-  <div class="flex w-full items-center justify-center">
-    <span class=" uppercase text-4xl" id="about-txt"><strong class="text-color-1">About </strong> Me!</span>
-  </div>
-  <div class="flex text-xl lg:text-2xl xl:text-2xl items-center justify-center py-12 leading-9 text-center lg:px-4 xl:px-4">
-    <span>
-        CAPM certified project manager with 3+ years of experience owning all stages of the lifecycle to deliver projects that exceed 
-        expectations on time and on budget, driving strategic initiatives in BFSI. Proven expertise in Project Management, Business Analysis, 
-        Risk Management, and Cybersecurity. Skilled in leading cross-functional teams and delivering complex projects successfully.
-    </span>
-  </div>
-  <div class="exp lg:flex lg:items-center lg:justify-center xl:flex xl:items-center xl:justify-center w-full gap-28">
-    <div class="flex items-center justify-center">
-        <span class="text-6xl px-2 text-color-1" words-slide-up="" text-split="" >3+</span>
-        <span class="text-sm opacity-60" words-slide-up="" text-split="" >Years of <br/>Experience</span>
-    </div>
-    <div class="flex items-center justify-center py-6">
-        <span class="text-6xl px-2 text-color-1" words-slide-up="" text-split="" >120+</span>
-        <span class="text-sm opacity-60" words-slide-up="" text-split="" >Clients <br/>Handled</span>
-    </div>
-  </div>
-</div>
 
-
-<div class=" mt-10 lg:mt-28 xl:mt-36 font-mono">
-  <div class="flex w-full items-center justify-center">
-    <span class="uppercase text-4xl" id="about-txt" words-slide-up="" text-split="">Certifications</span>
-  </div>
-  <div class="certificate flex" data-aos="fade-up" data-aos-duration="3500">
-    <div class="certificate-slide flex">
-      <img src="./assets/BCMS.png" alt="">
-      <img src="./assets/CC.png" alt="">
-      <img src="./assets/CSM.png" alt="">
-      <img src="./assets/CSPO.png" alt="">
-      <img src="./assets/GreenBelt.png" alt="">
-      <img src="./assets/ISMS.png" alt="">
-      <img src="./assets/PIMS.png" alt="">
-      <img src="./assets/PMI.png" alt="">
-      <img src="./assets/BCMS.png" alt="">
-      <img src="./assets/CC.png" alt="">
-      <img src="./assets/CSM.png" alt="">
-      <img src="./assets/CSPO.png" alt="">
-      <img src="./assets/GreenBelt.png" alt="">
-      <img src="./assets/ISMS.png" alt="">
-      <img src="./assets/PIMS.png" alt="">
-      <img src="./assets/PMI.png" alt="">
-
-    </div>
-
-  </div>
-</div>
-
-
-<div class="w-full px-10 py-14">
-  <div class="w-full mx-auto my-auto max-w-[80rem]">
-    <div class="w-full text-center max-w-[40rem] mx-auto">
-      <div class="light text-center">
-        <img class="home-growth_image" src="https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth.jpg" alt="" style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; filter: blur(0px); opacity: 1;" sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, (max-width: 1080px) 92vw, 994px" data-w-id="69fbb613-3b03-9241-9327-2ed90252863b" loading="lazy" srcset="https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth-p-500.jpg 500w, https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth-p-800.jpg 800w, https://cdn.prod.website-files.com/65cb81c1d7b5c84b09d0b178/660c9a83b2504b903f31e914_bg-new-growth.jpg 994w">
-      </div>
-      <div class="font-code mb-4">
-        <h1 words-slide-up="" text-split="" class="uppercase text-4xl">Maximizing <strong class="text-color-1">Efficiency</strong><br>Through Work</h1>
-      </div>
-      <div class="font-code mb-4" style="opacity: 0.7;" data-aos="fade-up" data-aos-duration="3000">
-        <p>I have a proven track record of developing effective risk management strategies for clients in the financial services sector.</p>
-      </div>
-      <p class="font-code opacity-70" data-aos="fade-up" data-aos-duration="3000">I excel at collaborating with cross-functional teams to deliver high-quality projects.<br>My Expertise Include:</p>
-    </div>
-    <div class="expert" data-aos="fade-up" data-aos-duration="3000">
-      <div>
-        <div class="number text-color-1">
-          01
-        </div>
-        <div class="heading font-mono">
-          IT risk Assessments
-        </div>
-        <div class="in-text py-2 font-mono">
-          <p>I specialize in IT risk assessments, empowering businesses to proactively identify vulnerabilities and threats within their technology infrastructure.</p>
-        </div>
-        <div class="flex">
-          <img src="./assets/arrow-sub-down-right-svgrepo-com.svg" alt="" class="w-12 h-12">
-          <div class="text-color-1 text-xl lg:text-1xl xl:text-1xl">72% of businesses reduce cybersecurity incidents through comprehensive IT risk assessments.</div>
-        </div>
-      </div>
-      <div>
-        <div class="number text-color-1">
-          02
-        </div>
-        <div class="heading font-mono">
-          Internal Control Testing
-        </div>
-        <div class="in-text py-2 font-mono">
-          <p>I specialize in Internal Control Testing, a critical process that ensures the business's operational integrity and compliance with applicable laws.</p>
-        </div>
-        <div class="flex">
-          <img src="./assets/arrow-sub-down-right-svgrepo-com.svg" alt="" class="w-12 h-12">
-          <div class="text-color-1 text-xl lg:text-1xl xl:text-1xl">65% of businesses enhance financial accuracy and prevent fraud with thorough internal control testing.</div>
-        </div>
-      </div>
-      <div>
-        <div class="number text-color-1">
-          03
-        </div>
-        <div class="heading font-mono">
-          Regulatory Compliance
-        </div>
-        <div class="in-text py-2 font-mono">
-          <p>I specialize in Regulatory Compliance, ensuring that the business adheres to all relevant laws, regulations, and guidelines specific to the industry.</p>
-        </div>
-        <div class="flex">
-          <img src="./assets/arrow-sub-down-right-svgrepo-com.svg" alt="" class="w-12 h-12">
-          <div class="text-color-1 text-xl lg:text-1xl xl:text-1xl">88% of businesses see improved operational efficiency with stringent regulatory compliance.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- projects section start -->
- <div class="my-20 lg:my-28 xl:my-32" id="work">
-  <h1 class="uppercase text-3xl lg:text-8xl xl:text-8xl w-full text-center font-code" words-slide-up="" text-split="" >Proj<strong class="uppercase text-color-1">ects</strong></h1>
- </div>
-
-  <div class="containers" data-aos="fade-up">
-      <ul id="cards">
-          <li class="card" id="card1">
-              <div class="card-body">
-                  <h2>Card 1</h2>
-              </div>
-          </li>
-          <li class="card" id="card2">
-              <div class="card-body">
-                  <h2>Card 2</h2>
-              </div>
-          </li>
-          <li class="card" id="card3">
-              <div class="card-body">
-                  <h2>Card 3</h2>
-              </div>
-          </li>
-          <li class="card" id="card4">
-              <div class="card-body">
-                  <h2>Card 4</h2>
-              </div>
-          </li>
-      </ul>
-  </div>
-
-
-<!-- photography -->
-
-
-<footer class='relative w-full bottom-0 left-0 right-0 mt-[7rem] mb-[1rem] lg:mt-[11rem] xl:mt-[11rem] lg:mb-[2rem] xl:mb-[2rem]'>
-  <div class='w-full px-15'>
-      <div class='top-0 px-[2rem] text-center ml-auto mr-auto max-w-[42rem]'>
-          <h5 class='text-3xl lg:text-4xl xl:text-4xl uppercase font-code font-bold'>Have a <strong class='text-color-1'>chat</strong> with me!</h5>
-          
-      </div>
-      <div class='lg:flex xl:flex lg:items-center lg:justify-between xl:items-center xl:justify-between px-5 lg:px-7.5 xl:px-10 max-lg:py-4 lg:py-9'>
-          <a class="w-[19rem] xl:mr-8 hidden lg:flex xl:flex">
-              <img src="./assets/RGLogo.png" width="50px" height="50px">
-              <h1 class="font-code font-bold tracking-widest my-6">Rahul Gaur<span class="hidden lg:inline md:inline sm:inline"></span></h1>
-          </a>
-          <div class="py-8 lg:py-0 xl:py-0">
-              <a href="">
-                  <i class='fa fa-download'></i>
-                  <span class='font-code transition-colors hover:text-color-1 px-2'>Take a look at my CV</span>
-              </a>
-          </div>
-          
-          <div>
-          <span class='uppercase font-code'>Get in Touch:</span>
-          <a class="w-[19rem] xl:mr-8 flex" target='blank' href="maito:rahulgaur.iitr@gmail.com">
-              <span class='text-center font-code transition-colors hover:text-color-1'>rahulgaur.iitr@gmail.com</span>
-          </a>
-          </div>
-      </div>
-      <div class='flex py-[3rem] items-center justify-between border-t-n-1 border-t-[0.1rem]'>
-          <p class='text-[1rem] px-8 lg:px-5 '>© Copyright 2024, All Rights Reserved</p>
-          <ul class='flex flex-col lg:flex-row xl:flex-row justify-end gap-[1rem] px-10 lg:px-9 '>
-              <li>
-                  <a href="#" class='text-[1rem] transition-colors hover:text-color-1'>Privacy Policy</a>
-              </li>
-              <li>
-                  <a href="#" class='text-[1rem] transition-colors hover:text-color-1'>Terms & Conditions</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</footer>
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
@@ -322,6 +331,7 @@
 <script src="https://unpkg.com/split-type"></script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./index.js"></script>
 <script>
