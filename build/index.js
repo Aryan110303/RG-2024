@@ -352,9 +352,4 @@ Pace.on('done', () => {
     opacity:1,
     ease:Expo.easeInOut
   },"-=2.2")
-  .to('.pre_loading' ,{
-    duration:1,
-    opacity:0,
-    ease
-  })
 })
